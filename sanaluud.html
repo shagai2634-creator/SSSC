@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Санал илгээх</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Санал илгээх</h1>
+    <nav>
+      <a href="index.html">Нүүр</a> |
+      <a href="sanaluud.html">Санал илгээх</a> |
+      <a href="tuluvluguu.html">Төлөвлөгөө</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Оюутны зөвлөлд санал илгээх</h2>
+    <p>Доорх формоор санал хүсэлтээ илгээнэ үү:</p>
+
+    <!-- Formspree ашиглах (yourid-г өөрийн ID-р солино) -->
+    <form action="https://formspree.io/f/yourid" method="POST">
+      <label for="name">Таны нэр:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Имэйл:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Санал:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Илгээх</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><a href="index.html">← Нүүр рүү буцах</a></p>
+    <p>© 2025 Оюутны Зөвлөл</p>
+  </footer>
+</body>
+</html>

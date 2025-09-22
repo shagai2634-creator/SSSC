@@ -1,0 +1,89 @@
+/* Ерөнхий */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Толгой хэсэг */
+header {
+  background: #1e40af;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Навигаци */
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Гол хэсэг */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+main h2 {
+  color: #1e40af;
+}
+
+/* Форм */
+form {
+  display: block;
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #1e40af;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e3a8a;
+}
+
+/* Хөл хэсэг */
+footer {
+  text-align: center;
+  background: #1e40af;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
