@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Санал илгээх</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Зөвхөн энэ хуудсанд хэрэглэх жижиг стилиуд */
+    .form-wrap{
+      max-width: 960px;   /* дэлгэц том үед хэт сунгахгүй */
+      margin: 0 auto;     /* голлуулна */
+      padding: 0 12px;
+    }
+    .form-wrap iframe{
+      width: 100%;
+      height: 900px;      /* уртыг хангалттай өгнө; доор media query-гаар бага дэлгэцэд уртасгана */
+      border: 0;
+    }
+    @media (max-width: 480px){
+      .form-wrap iframe{
+        height: 1100px;   /* гар утсанд асуултууд багтахгүй сунгагддаг тул илүү урт өгнө */
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,23 +34,19 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Оюутны зөвлөлд санал илгээх</h2>
-    <p>Доорх формоор санал хүсэлтээ илгээнэ үү:</p>
+  <main class="form-wrap">
+    <!-- ТАНЫ ИЛГЭСЭН IFRAME яг тэр чигээрээ -->
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSe7jv4TVTe0jCeGP0gM9sj2r9jCnMLiy4jyn0ucT03XNveQcw/viewform?embedded=true"
+      width="640" height="648" frameborder="0" marginheight="0" marginwidth="0">
+      Ачаалж байна…
+    </iframe>
 
-    <!-- Formspree ашиглах (yourid-г өөрийн ID-р солино) -->
-    <form action="https://formspree.io/f/yourid" method="POST">
-      <label for="name">Таны нэр:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-
-      <label for="email">Имэйл:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="message">Санал:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-      <button type="submit">Илгээх</button>
-    </form>
+    <!-- Хэрвээ iframe жижиг санагдвал “бүтэн дэлгэцээр нээх” сонголт -->
+    <p style="text-align:center; margin-top: 12px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7jv4TVTe0jCeGP0gM9sj2r9jCnMLiy4jyn0ucT03XNveQcw/viewform"
+         target="_blank" rel="noopener">Формыг бүтэн дэлгэцээр нээх</a>
+    </p>
   </main>
 
   <footer>
